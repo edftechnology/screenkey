@@ -210,7 +210,6 @@ Para configurar/instalar/usar o `screenkey` no `Linux Ubuntu`sem precisar digita
     sudo apt list --upgradable
     sudo apt full-upgrade -y
     sudo apt install screenkey -y
-    screenkey -s small --opacity 0.5 --font-color '#FFD700'
     ```
 
 
