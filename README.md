@@ -13,7 +13,7 @@ _In this document are contained the main commands and settings to set up/install
 
 ### `screenkey`
 
-O `screenkey` é uma ferramenta de código aberto para sistemas `Linux Ubuntu` que exibe as teclas
+O `screenkey` é uma ferramenta de código aberto para sistemas `Linux` que exibe as teclas
 pressionadas no momento em uma sobreposição na tela, funcionando como uma ajuda visual especialmente
 útil em apresentações, tutoriais em vídeo ou durante sessões de compartilhamento de tela, onde é
 importante mostrar aos espectadores quais comandos estão sendo digitados. Depois de ser iniciado,
@@ -26,7 +26,8 @@ principal que está sendo compartilhada.
 
 ## 1. Como configurar/instalar/usar o `screenkey` no `Linux Ubuntu` [1]
 
-Para configurar/instalar/usar o `screenkey` no `Linux Ubuntu`, você pode seguir estes passos:
+Para instalar o `screenkey` no `Linux Ubuntu` usando os repositórios oficiais do sistema e o
+gerenciador de pacotes `apt`, você pode seguir estes passos:
 
 1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
 
@@ -76,16 +77,20 @@ Para configurar/instalar/usar o `screenkey` no `Linux Ubuntu`, você pode seguir
     sudo apt full-upgrade -y
     ```
 
-## 1.2 Usar o `screenkey`
+## 1.2 Instalar e usar o `screenkey`
 
-1. **Instale o `screenkey` utilizando o gerenciador de pacotes apt:**
+1. **Instalar o `screenkey` utilizando o gerenciador de pacotes `apt`:**
 
     ```bash
     sudo apt install screenkey -y
     ```
 
-    Após a instalação, você pode iniciar o `screenkey` diretamente do `Terminal Emulator` digitando
-    `screenkey` ou procurando por ele no menu de aplicativos.
+    Após a instalação, você pode iniciar o `screenkey` diretamente pelo `Terminal Emulator` digitando
+    o comando abaixo ou procurando por ele no menu de aplicativos:
+
+    ```bash
+    screenkey
+    ```
 
     O `screenkey` é uma ferramenta útil para demonstrações ou gravações de tela, pois exibe as
     teclas pressionadas em tempo real, facilitando o entendimento de comandos e atalhos utilizados
@@ -93,10 +98,11 @@ Para configurar/instalar/usar o `screenkey` no `Linux Ubuntu`, você pode seguir
     exibição das teclas, você pode acessar as opções através de um menu de configuração ou via linha
     de comando.
 
-Lembre-se de que, dependendo da versão do seu `Linux Ubuntu` e dos repositórios disponíveis, pode
-ser necessário adicionar um repositório específico ou baixar o `screenkey` de outra fonte. No
-entanto, na maioria das versões recentes do `Linux Ubuntu`, o comando acima deve funcionar sem
-problemas.
+    Para consultar as opções disponíveis na versão instalada pelo `apt`, use:
+
+    ```bash
+    screenkey --help
+    ```
 
 ### 1.3 Configurar o tamanho da letra no `screenkey`
 
@@ -150,7 +156,7 @@ você pode combinar os argumentos:
     screenkey -s small --opacity 0.5
     ```
 
-Este comando iniciará o `screenkey` com fonte grande e uma transparência de `50%` no fundo.
+Este comando iniciará o `screenkey` com fonte pequena e uma transparência de `50%` no fundo.
 
 ## 1.5 Personalizar a cor da fonte no `screenkey`
 
@@ -191,7 +197,7 @@ dourado, você poderia usar:
 
 ## 2. Código completo para configurar/instalar/usar
 
-Para configurar/instalar/usar o `screenkey` no `Linux Ubuntu`sem precisar digitar linha por linha, você pode seguir estas etapas:
+Para configurar/instalar/usar o `screenkey` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 
 1. Abrir o `Terminal Emulator`. Você pode fazer isso pressionando:
 
@@ -204,22 +210,21 @@ Para configurar/instalar/usar o `screenkey` no `Linux Ubuntu`sem precisar digita
     ```bash
     sudo apt clean
     sudo apt autoclean
-    sudo apt autoremove
-    sudo apt update -y
-    sudo apt autoclean
+    sudo apt autoremove -y
+    sudo apt update
+    sudo apt --fix-broken install
+    sudo apt clean
     sudo apt list --upgradable
     sudo apt full-upgrade -y
     sudo apt install screenkey -y
+    screenkey --mouse -s small --opacity 0.5 --font-color '#FFD700'
     ```
 
 
 ## Referências
 
-[3] OPENAI.
-**Instalar o `screenkey` o `linux ubuntu` pelo `terminal emulator`.**
-Disponível em: <https://chat.openai.com/c/58aa3f5f-c2cb-4a22-9f2b-11c4554c32a7> (texto adaptado).
-Acessado em: 06/03/2024 13:47.
+[1] UBUNTU. **Detalhes do pacote `screenkey` no `ubuntu`**. Disponível em: <https://packages.ubuntu.com/search?keywords=screenkey>. Acessado em: 07/09/2026.
 
-[2] OPENAI. **Vs code: editor popular.**
-Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado).
-Acessado em: 06/03/2024 13:48.
+[2] WAVEXX. **Screenkey**. Disponível em: <https://www.thregr.org/wavexx/software/screenkey/>. Acessado em: 07/09/2026.
+
+[3] OPENAI. **Instalar o `screenkey` no `linux ubuntu` pelo `terminal emulator`**. Disponível em: <https://chatgpt.com/c/58aa3f5f-c2cb-4a22-9f2b-11c4554c32a7>. ChatGPT. Acessado em: 07/09/2026.
