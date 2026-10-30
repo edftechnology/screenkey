@@ -223,8 +223,16 @@ Para configurar/instalar/usar o `screenkey` no `Linux Ubuntu` sem precisar digit
 
 ## Referências
 
-[1] UBUNTU. **Detalhes do pacote `screenkey` no `ubuntu`**. Disponível em: <https://packages.ubuntu.com/search?keywords=screenkey>. Acessado em: 07/09/2026.
+[1] UBUNTU.
+**Detalhes do pacote `screenkey` no `ubuntu`**. Disponível em: <https://packages.ubuntu.com/search?keywords=screenkey>.
+Acessado em: 07/09/2026.
 
-[2] WAVEXX. **Screenkey**. Disponível em: <https://www.thregr.org/wavexx/software/screenkey/>. Acessado em: 07/09/2026.
+[2] WAVEXX. **Screenkey**.
+Disponível em: <https://www.thregr.org/wavexx/software/screenkey/>.
+Acessado em: 07/09/2026.
 
-[3] OPENAI. **Instalar o `screenkey` no `linux ubuntu` pelo `terminal emulator`**. Disponível em: <https://chatgpt.com/c/58aa3f5f-c2cb-4a22-9f2b-11c4554c32a7>. ChatGPT. Acessado em: 07/09/2026.
+[3] OPENAI.
+**Instalar o `screenkey` no `linux ubuntu` pelo `terminal emulator`**.
+Disponível em: <https://chatgpt.com/c/58aa3f5f-c2cb-4a22-9f2b-11c4554c32a7>.
+ChatGPT.
+Acessado em: 07/09/2026.
